@@ -1,0 +1,412 @@
+<html>
+	<head>
+		<title>Contact US</title>
+		<link rel="stylesheet" href="style.css">
+		
+		<style>
+			.main
+			{
+				display: flex;
+				flex-direction: row;
+			}
+
+			.ourDetails
+			{
+				display: flex;
+				flex-direction: column;
+				margin: 50px 0px 40px 90px;
+				float: left;
+			}
+
+			.mainHeading
+			{
+				font-size: 100px;
+				font-weight: 200;
+			}
+			
+			.query
+			{
+				display: flex;
+				font-size: 25px;
+				width: 500px;	
+				line-height: 1.5;
+				color: #7f7f7f;
+			}
+			
+			.ourContact
+			{
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.getInTouch,.findJob,.visitingUs
+			{
+				margin-top: 50px;
+			}
+			
+			.subHeading
+			{
+				font-size: 30px;
+				font-weight: 200;
+				margin-bottom: 15px;
+			}
+			
+			.unit, .unit a
+			{
+				margin-bottom: 10px;
+				text-decoration: none;
+				color: #7f7f7f;
+				font-size: 20px;
+			}
+		
+			.unit a
+			{
+				text-decoration: underline;
+				transition: text-decoration 0.5s;	
+			}
+			
+			.unit a:hover
+			{
+				text-decoration: none;
+			}
+
+			.userDetails
+			{
+				margin: 100px 0px 50px 200px;
+				display: flex;
+				flex-direction: column;
+				border: 2px solid black;
+				background-color: #171717;
+				color: white;
+				padding: 25px;
+				width: 600px;
+			}
+			
+			.formHeading
+			{
+				margin: 40px 0px 25px 40px;
+				font-size: 60px;
+				font-weight: 200;
+			}
+			
+			.formDescription
+			{
+				margin: 0px 0px 25px 40px;
+				font-size: 23px;
+			}
+			
+			.userDetails label
+			{
+				font-size: 23px;
+				margin-left: 40px;
+			}
+			
+			.userDetails input
+			{	
+				width: 200px;
+				margin-top: 20px;
+				margin-left: 40px;
+				margin-bottom: 30px;
+				border-style: none none solid none;
+				background: transparent;
+				transition: all 0.3s;
+				color: white;
+				
+			}
+			
+			.errorInput
+			{
+				outline: 0px;
+				background:transparent;
+				border-style: none none solid none;
+				border-bottom: 1px solid #ff073a;
+			}
+
+			.correctInput
+			{
+				outline: 0px;
+				background:transparent;
+				border-style: none none solid none;
+				border-bottom: 1px solid #39ff14;
+			}
+			
+			.userDetails input:focus
+			{
+				outline: 0px;
+				border-style: none none solid none;
+				background: transparent;
+			}
+			
+			.userDetails input:hover
+			{
+				border-color: white;
+			}
+
+			#company, #message
+			{
+				width: 445px;
+			}
+
+			.term
+			{
+				font-size: 17px;
+				float: right;
+				width: 400px;
+				margin: 20px 100px 0px 0px;
+			}
+			
+			.term span a
+			{
+				color: white;
+				transition: all 0.3s;
+			}
+
+			.term span a:hover
+			{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navBar">
+				<a href="index.html">
+					<img src="./images/logo.svg" alt="logo" class="logo">
+				</a>
+				<div class="navBar_links">
+					<ul class="navBar_list">
+						<li class="navBar_item"><a href="ourWork.html" class="navBar_item">Our Work</a></li>
+						<li class="navBar_item"><a href="approach.html" class="navBar_item">Approach</a></li>
+						<li class="navBar_item"><a href="culture.html" class="navBar_item">Culture</a></li>
+						<li class="navBar_item"><a href="ourBlog.html" class="navBar_item">Our Blog</a></li>
+						<li class="navBar_item"><a href="careers.html" class="navBar_item">Careers</a></li>	
+						<li class="navBar_item"><a href="contact.html" class="navBar_item">Contact</a></li>
+					</ul>
+				</div>
+			</nav> 
+		</header>
+
+		<div class="main">
+			<div class="ourDetails">
+				<h1 class="mainHeading">Contact Us</h1>
+				<span class="query">Excited to start a new project?<br>Or want to know more about our services<br>Whatever your query, we'd love to hear from you.</span>
+				
+				<div class="ourContact">
+					<div class="getInTouch">
+						<h4 class="subHeading">Get in touch</h4>
+						<ul>
+							<li class="unit contactInfo"><a href="#">NagendraThakurSharma@gmail.com</a></li>
+							<li class="unit contactInfo"><a href="#">9807388700</a></li>
+						</ul>
+					</div>
+					
+					<div class="findJob">
+						<h4 class="subHeading">Looking for a job&#63;</h4>
+						<ul>
+							<li class="unit contactInfo"><a href="#">steve.jobs@icloud.com</a></li>
+						</ul>
+					</div>
+					
+					<div class="visitingUs">
+						<h4 class="subHeading">Visiting us</h4>
+						<ul>
+							<li class="unit contactInfo"><a href="#">steve.jobs@icloud.com</a></li>
+							<li class="unit location">Jwagal, Lalitpur</li>
+							<li class="unit location">Biratnagar, Morang</li>
+							<li class="unit location" style="margin-top:20px;"><a href="#">Get directions</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			<form class="userDetails" id="userDetails">	
+				<h2 class="formHeading">Speak to an expert</h2>
+				<span class="formDescription">Book a 30 minute chat with a senior team member</span>
+				
+				<div class="fullName">
+
+					<div class="fullNameLabel">
+						<label for="fName" style="margin-right:100px;">First name</label>
+						<label for="lName">Last name</label>	
+					</div>
+				
+					<div class="fullNameInput">
+						<input type="text" id="fName" name="fName">
+						<input type="text" id="lName" name="lName">
+					</div> 
+				</div>
+				
+				<div class="userContact">
+
+					<div class="userContactLabel">
+						<label for="email" style="margin-right:143px;">Email</label>
+						<label for="phone">Phone number</label>
+					</div>
+
+					<div class="userContactInput">
+						<input type="email" id="email" name="email">
+						<input type="number" id="phone" name="phone">
+					</div>
+				</div> 
+
+				<label for="company">Company</label>
+				<input type="text" id="company" name="company">
+
+				<label for="message">Message</label>
+				<input type="text" id="message" name="message" style="margin-top:100px;">
+				
+				<div class="termsCheck">
+					<input type="checkbox" id="termCB" name="termCB" style="height:30px;width:30px;background-color:#171717;">
+					<div class="term">
+						<span>Please confirm you agree to be contacted via the email address provided and that you agree to our <a href="#">Privacy Policy</span>
+					</div> 
+					
+				</div>
+	
+				<input type="submit" value="Send message" class="submitButton" style="border:2px solid white;padding:15px;background-color:white;color:171717;font-size:20px;cursor:pointer;"> 
+			</form>
+
+		</div>
+		
+		<footer>
+			<div class="footWrapper">
+				<img src="./images/logo.svg" alt="logo" class="logoFooter">
+				<div class="companyDetails">
+					<div class="contact">
+						<ul class="contactList">
+							<li class="heading contact" style="text-decoration:none;color:white;">Contact</li>
+							<li class="item contact"><a>NagendraThakurSharma@gmail.com</a></li>
+							<li class="item contact"><a>9819016941</a></li>
+						</ul>
+					</div>
+					
+					<div class="location">
+						<ul class="locationList">
+							<li class="heading location">Location</li>
+							<li class="item location"><a>Jwagal, Lalitpur</a></li>
+							<li class="item location"><a>Biratnagar, Morang</a></li>
+						</ul>
+					</div>
+
+					<div class="socialMedia">
+						<ul class="socialMediaList">
+							<li class="heading socialMedia">Social Media</li>
+							<div class="socialMediaItems">
+								<li class="item socialMedia"><img src="./images/twitter.svg" alt="twitter" class="logoFooter socialMedia"></li>
+								<li class="item socialMedia"><img src="./images/instagram.svg" alt="instagram" class="logoFooter socialMedia"></li>
+								<li class="item socialMedia"><img src="./images/linkedin.svg" alt="linkedin" class="logoFooter socialMedia"></li>
+							</div> 
+						</ul>
+					</div>
+				</div>
+			
+				<div class="conditions">
+					<span class="condition">&#169; 2021 Nagendra Thakur Sharma.</span>
+					<span class="condition"><a href="#">Privacy Policy</a></span>
+					<span class="condition"><a href="#">Cookie Policy</a></span>
+					<span class="condition"><a href="#">Terms and Conditions</a></span>
+				</div>
+			</div>
+		</footer>
+
+		<script src="index.js">
+
+		</script>
+		<script>
+			const form = document.getElementById("userDetails");
+			const fName = document.getElementById("fName");
+			const lName = document.getElementById("lName");
+			const email = document.getElementById("email");
+			const phone = document.getElementById("phone");	
+			const company = document.getElementById("company");
+			const message = document.getElementById("message");
+
+			function testEmail(email)
+			{
+				return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+			}
+
+			function checkInputs()
+			{
+				const fNameValue = fName.value.trim();
+				const lNameValue = lName.value.trim();
+				const emailValue = email.value.trim();
+				const phoneValue = phone.value.trim();
+				const companyValue = company.value.trim();
+				const messageValue = message.value;
+				
+				if(fNameValue === "")
+				{
+					fName.classList.add("errorInput");
+				}
+				else
+				{
+					fName.classList.add("correctInput");
+				}
+
+				if(lNameValue === "")
+				{
+					lName.classList.add("errorInput");
+				}
+				else
+				{
+					lName.classList.add("correctInput");
+				}
+			
+				if(emailValue === "")
+				{
+					email.classList.add("errorInput");
+				}
+				else if (!testEmail(emailValue))
+				{
+					email.classList.add("errorInput");
+				}
+				else
+				{	
+					email.classList.add("correctInput");
+				}
+
+				if(phoneValue === "")
+				{
+					phone.classList.add("errorInput");
+				}
+				else
+				{
+					phone.classList.add("correctInput");
+				}	
+				
+				if(companyValue === "")
+				{
+					console.log("no company");
+				}
+				else
+				{
+					company.classList.add("correctInput");
+				}	
+				
+
+				if(messageValue === "")
+				{
+					message.classList.add("errorInput");
+				}
+				else
+				{
+					message.classList.add("correctInput");
+				}
+				
+			}
+						
+			form.addEventListener("submit", (e) =>
+			{
+				e.preventDefault();
+				checkInputs();
+				console.log("submit");
+			});
+			
+			
+		</script>
+	</body>
+
+</html>
